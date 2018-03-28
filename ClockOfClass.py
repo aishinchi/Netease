@@ -17,7 +17,7 @@ if __name__ == "__main__":
         minite = listOfTime[2*j+1] + needTime
         hour = listOfTime[2*j]
         if minite >= 60:
-            minite =- 60
+            minite = minite - 60
             hour =+ 1
         if hour > classTime[0] or (hour == classTime[0] and minite > classTime[1]):
             list2.append(10000)
